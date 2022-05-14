@@ -1,3 +1,13 @@
+:root {
+    --gray-1: #1A1A1A;
+    --gray-2: #333333;
+    --gray-3: #4D4D4D;
+    --gray-4: #808080;
+    --gray-5: #BFBFBF;
+    --orange-light: #FF8000;
+    --orange-dark: #FF6A00;
+}
+
 /* Adaptiv */
 
 @media screen and (max-width:1200px) {
