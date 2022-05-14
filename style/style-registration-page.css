@@ -53,6 +53,10 @@
     font-size: 1rem;
 }
 
+::placeholder {
+    color: var(--gray-3);
+}
+
 .registration__form div input {
     padding: 10px 10px 10px 10px;
     border-radius: 10px;
