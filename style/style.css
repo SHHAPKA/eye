@@ -69,7 +69,7 @@ a {
 /* Header */
 
 .header {
-    height: 57vw;
+    height: 45vw;
     background-color: var(--gray-1);
 }
 
@@ -132,6 +132,75 @@ a {
     justify-content: center;
 }
 
+/* Header film */
+
+.header__film {
+    width: 100%;
+    height: 45vw;
+    position: absolute;
+}
+
+.header__film > img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0.75;
+    object-fit: cover;
+}
+
+.header__film__button {
+    position: absolute;
+    display: flex;
+    flex-flow: row nowrap;
+    bottom: 0;
+    margin: 0 0 3vw 5vw;
+    gap: 1.5vw;
+}
+
+.header__film__button > a {
+    display: flex;
+    align-items: center;
+    color: white;
+    font-size: 16px;
+    font-weight: 700;
+    gap: 1vw;
+}
+
+.header__film__button__see {
+    background-color: var(--orange-light);
+    border-radius: 10px;
+    padding: 1vw 1.5vw 1vw 1.5vw;
+    transition: background 0.2s ease;
+}
+
+.header__film__button__see:hover {
+    transition: background 0.2s ease;
+    background-color: var(--orange-dark);
+}
+
+.header__film__button__about {
+    background-color: var(--gray-2);
+    border-radius: 10px;
+    padding: 1vw 1.5vw 1vw 1.5vw;
+    transition: background 0.2s ease;
+}
+
+.header__film__button__about:hover {
+    transition: background 0.2s ease;
+    background-color: var(--gray-3);
+}
+
+.header__film__button__bookmark {
+    background-color: var(--gray-2);
+    border-radius: 10px;
+    padding: 1vw 1.5vw 1vw 1.5vw;
+}
+
+.header__film__button__bookmark:hover {
+    transition: background 0.2s ease;
+    background-color: var(--gray-3);
+}
+
 /* Window profile */
 
 /* .icon__profile:hover ~ .profile__window, 
@@ -175,7 +244,7 @@ a {
     margin: 0 15% 0 15%;
     padding: 7%;
     transition: background 0.2s ease;
-    font-size: 16;
+    font-size: 18px;
     text-align: center;
 }
 
@@ -266,76 +335,6 @@ a {
 }
 
 .profile__window div ul li:hover {
-    background-color: var(--gray-3);
-}
-
-
-/* Header film */
-
-.header__film {
-    width: 100%;
-    height: 57vw;
-    position: absolute;
-}
-
-.header__film > img {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    opacity: 0.75;
-    object-fit: cover;
-}
-
-.header__film__button {
-    position: absolute;
-    display: flex;
-    flex-flow: row nowrap;
-    bottom: 0;
-    margin: 0 0 3vw 5vw;
-    gap: 1.5vw;
-}
-
-.header__film__button > a {
-    display: flex;
-    align-items: center;
-    color: white;
-    font-size: 16px;
-    font-weight: 700;
-    gap: 1vw;
-}
-
-.header__film__button__see {
-    background-color: var(--orange-light);
-    border-radius: 10px;
-    padding: 1vw 1.5vw 1vw 1.5vw;
-    transition: background 0.2s ease;
-}
-
-.header__film__button__see:hover {
-    transition: background 0.2s ease;
-    background-color: var(--orange-dark);
-}
-
-.header__film__button__about {
-    background-color: var(--gray-2);
-    border-radius: 10px;
-    padding: 1vw 1.5vw 1vw 1.5vw;
-    transition: background 0.2s ease;
-}
-
-.header__film__button__about:hover {
-    transition: background 0.2s ease;
-    background-color: var(--gray-3);
-}
-
-.header__film__button__bookmark {
-    background-color: var(--gray-2);
-    border-radius: 10px;
-    padding: 1vw 1.5vw 1vw 1.5vw;
-}
-
-.header__film__button__bookmark:hover {
-    transition: background 0.2s ease;
     background-color: var(--gray-3);
 }
 
@@ -441,7 +440,6 @@ a {
 /* Footer */
 
 .footer {
-    height: 26vw;
     background-color: var(--gray-2);
     padding: 2vw 5vw 2vw 5vw;
 }
@@ -476,7 +474,7 @@ a {
     display: flex;
 }
 
-.footer__text__botoom {
+.footer__text__bottom {
     font-weight: 700;
     font-size: 20px;
 }

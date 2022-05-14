@@ -6,6 +6,8 @@
     --gray-5: #BFBFBF;
     --orange-light: #FF8000;
     --orange-dark: #FF6A00;
+    --red: #E60000;
+    --green: #00BF13;
 }
 
 .hello__window {
@@ -27,15 +29,15 @@
 .registration__text {
     margin-top: 2vw;
     color: white;
-    font-size: 3rem;
+    font-size: 36px;
     border-bottom: 10px solid var(--orange-light) ;
 }
 
 .registration__form {
     display: flex;
     flex-flow: column nowrap;
-    width: 350px;
-    padding: 40px 50px 40px 50px;
+    width: 25vw;
+    padding: 3vw 4vw 3vw 4vw;
     border-radius: 10px;
     background-color: var(--gray-2);
     margin-top: 2vw;
@@ -50,7 +52,7 @@
 .registration__form div div {
     text-align: start;
     color: white;
-    font-size: 1rem;
+    font-size: 12px;
 }
 
 ::placeholder {
@@ -58,9 +60,9 @@
 }
 
 .registration__form div input {
-    padding: 10px 10px 10px 10px;
+    padding: 1vw 1vw 1vw 1vw;
     border-radius: 10px;
-    margin-bottom: 10px;
+    margin-bottom: 1vw;
     background-color: var(--gray-5);
     border: none;
     outline: none;
@@ -68,9 +70,9 @@
 }
 
 button {
-    margin-top: 30px;
+    margin-top: 2vw;
     border-radius: 10px;
-    padding: 10px 15px;
+    padding: 1vw 1.5vw;
     color: white;
     border: none;
     background-color: var(--orange-light);
