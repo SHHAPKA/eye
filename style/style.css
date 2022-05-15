@@ -45,13 +45,14 @@ a {
     width: 3vw;
     height: 2vw;
     border-radius: 5px;
-    margin: 0.6vw 0 0 0.6vw;
+    margin: 0.7vw 0 0 0.7vw;
 }
 
 .elt__numb {
     color: white;
     font-size: 14px;
     font-weight: 900;
+    margin-bottom: .25vw;
 }
 
 .elt__bad {
