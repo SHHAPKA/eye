@@ -81,13 +81,19 @@
 
 @media screen and (max-width:768px) {
     .nav ul {margin-bottom: .5vw;}
+    .content__new__video {grid-template-columns: 1fr 1fr 1fr;}
+    .video__block {width: 28vw; height: 16vw;}
 }
 
 @media screen and (max-width:480px) {
     /* .new__video__block > a > div > img {border-radius: 5px;} */
     .nav ul {margin-bottom: 1vw;}
+    .content__new__video {grid-template-columns: 1fr 1fr; row-gap: 26vw;}
+    .video__block {width: 42vw; height: 23vw;}
+    
 }
 
 @media screen and (max-width:320px) {
-
+    .content__new__video {grid-template-columns: 1fr; row-gap: 50vw;}
+    .video__block {width: 85vw; height: 45vw;}
 }
