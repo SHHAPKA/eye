@@ -378,9 +378,23 @@ a {
 
 .content {
     background-color: var(--gray-1);
-    padding: 0 5vw 100vh 5vw;
+    padding: 0 5vw 20vw 5vw;
     /* height: 40vw; */
 }
+
+@media all and (max-width:600px) {
+    .content {padding: 0 5vw 50vw 5vw;}
+}
+
+@media all and (max-width:420px) {
+    .content {padding: 0 5vw 85vh 5vw;}
+}
+
+@media all and (max-width:320px) {
+    .content {padding: 0 5vw 100vh 5vw;}
+}
+
+
 
 /* Content new */
 
