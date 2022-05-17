@@ -12,6 +12,33 @@
     box-sizing: border-box;
 }
 
+/* Icons */
+
+.icon__play {
+    width: 1.4vw;
+}
+
+.icon__info {
+    width: 2vw;
+}
+
+.icon__bookmark {
+    width: 1.5vw;
+}
+
+.icon__search {
+    width: 2vw;
+}
+
+@media all and (max-width: 600px) {
+    .icon__search {margin-top: .6vw;}
+}
+
+@media all and (max-width: 400px) {
+    .icon__search {margin-top: 1.5vw;}
+}
+
+
 :root {
     --gray-1: #1A1A1A;
     --gray-2: #333333;
@@ -32,7 +59,7 @@ ul {
 a {
     text-decoration: none;
     color: var(--gray-5);
-    font-size: 22px;
+    font-size: 1.5vw;
     transition: font-size 1s ease;
 }
 
@@ -44,15 +71,15 @@ a {
     background-color: var(--gray-4);
     width: 3vw;
     height: 2vw;
-    border-radius: 5px;
+    border-radius: .3vw;
     margin: 0.7vw 0 0 0.7vw;
 }
 
 .elt__numb {
     color: white;
-    font-size: 14px;
+    font-size: 1.1vw;
     font-weight: 900;
-    margin-bottom: .25vw;
+    margin-bottom: .2svw;
 }
 
 .elt__bad {
@@ -65,9 +92,7 @@ a {
 
 /* Fonts */
 
-
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-
 
 /* Header */
 
@@ -92,13 +117,13 @@ a {
 }
 
 .logo > img {
-    width: 40px;
+    width: 3vw;
     margin-right: 2vw;
 }
 
 .logo > a {
     font-weight: 900;
-    font-size: 40px;
+    font-size: 3vw;
     color: white;
     margin-right: 2vw;
     letter-spacing: 1.5rem;
@@ -108,6 +133,14 @@ a {
     display: flex;
     white-space: nowrap;
     margin-right: 2vw;
+}
+
+@media all and (max-width: 600px) {
+    .nav {padding-bottom: 1vw;}
+}
+
+@media all and (max-width: 400px) {
+    .nav {padding-bottom: 1.5vw;}
 }
 
 .nav > ul {
@@ -124,13 +157,12 @@ a {
 .nav__page {
     color: white;
     padding-bottom: .5vw;
-    border-bottom: 2px solid var(--orange-light);
+    border-bottom: 0.2vw solid var(--orange-light);
 }
 
-.icon__profile {
+.icon__profile__adapt {
     display: flex;
-    width: 50px;
-    height: 50px;
+    width: 3vw;
     align-items: center;
     justify-content: center;
 }
@@ -164,14 +196,15 @@ a {
     display: flex;
     align-items: center;
     color: white;
-    font-size: 16px;
+    font-size: 1.2vw;
     font-weight: 700;
     gap: 1vw;
 }
 
 .header__film__button__see {
     background-color: var(--orange-light);
-    border-radius: 10px;
+    /* border-radius: 10px; */
+    border-radius: 0.6vw;
     padding: 1vw 1.5vw 1vw 1.5vw;
     transition: background 0.2s ease;
 }
@@ -183,7 +216,7 @@ a {
 
 .header__film__button__about {
     background-color: var(--gray-2);
-    border-radius: 10px;
+    border-radius: 0.6vw;
     padding: 1vw 1.5vw 1vw 1.5vw;
     transition: background 0.2s ease;
 }
@@ -195,7 +228,7 @@ a {
 
 .header__film__button__bookmark {
     background-color: var(--gray-2);
-    border-radius: 10px;
+    border-radius: 0.6vw;
     padding: 1vw 1.5vw 1vw 1.5vw;
 }
 
@@ -229,25 +262,25 @@ a {
     position: absolute;
     background-color: var(--gray-2);
     width: 25vw;
-    margin-right: 3%;
-    border-radius: 0 0 20px 20px;
+    margin-right: 3vw;
+    border-radius: 0 0 2vw 2vw;
 }
 
 .hello__form {
     display: flex;
     flex-flow: column nowrap;
     row-gap: 2vw;
-    padding: 10% 20% 10% 20%;
+    padding: 3vw 2.5vw 3vw 2.5vw;
 }
 
 .hello__form .hello__logining {
     color: white;
     background-color: var(--orange-light);
-    border-radius: 10px;
-    margin: 0 15% 0 15%;
-    padding: 7%;
+    border-radius: 1vw;
+    margin: 0 4vw 0 4vw;
+    padding: 1.3vw;
     transition: background 0.2s ease;
-    font-size: 18px;
+    font-size: 1.5vw;
     text-align: center;
 }
 
@@ -259,10 +292,10 @@ a {
 .hello__form .hello__registration {
     background-color: var(--gray-3);
     color: var(--gray-5);
-    border-radius: 10px;
-    padding: 8%;
+    border-radius: 1vw;
+    padding: 1.3vw;
     transition: background 0.2s ease;
-    font-size: 12px;
+    font-size: 1.3vw;
     text-align: center;
 }
 
@@ -345,9 +378,23 @@ a {
 
 .content {
     background-color: var(--gray-1);
-    padding: 0 5vw 5vw 5vw;
+    padding: 0 5vw 20vw 5vw;
     /* height: 40vw; */
 }
+
+@media all and (max-width:600px) {
+    .content {padding: 0 5vw 50vw 5vw;}
+}
+
+@media all and (max-width:420px) {
+    .content {padding: 0 5vw 85vh 5vw;}
+}
+
+@media all and (max-width:320px) {
+    .content {padding: 0 5vw 100vh 5vw;}
+}
+
+
 
 /* Content new */
 
@@ -371,10 +418,9 @@ a {
 }
 
 .nav__new img {
-    margin-top: 6px;
+    margin-top: 0.5vw;
     display: none;
-    width: 30px;
-    height: 30px;
+    width: 2.5vw;
 }
 
 .new__text:hover ~ img {
@@ -384,7 +430,7 @@ a {
 
 .new__text {
     display: flex;
-    font-size: 30px;
+    font-size: 3vw;
     color: white;
 }
 
@@ -404,8 +450,12 @@ a {
 } */
 
 .new__video__block:hover .video__block {
-    padding: .3vw;
-    transition: padding .3s ease;
+    /* padding: .3vw; */
+    width: 18.5vw;
+    height: 10.5vw;
+    margin: -.25vw 0 0 -.5vw;
+    /* transition: padding .3s ease; */
+    transition: width .3s ease, height .3s ease, margin .3s ease;
 }
 
 /* .play__video__icon {
@@ -424,7 +474,7 @@ a {
 } */
 
 .new__video__block > a > div > img {
-    border-radius: 10px;
+    border-radius: 1vw;
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -442,11 +492,11 @@ a {
     transition: font-size 0.2s ease;
 } */
 
-.space {
+/* .space {
     background-color: var(--gray-1);
     width: 100%;
     padding-bottom: 50vw;
-}
+} */
 
 /* Footer */
 
@@ -457,7 +507,7 @@ a {
 
 .footer__icons__text {
     text-align: center;
-    border-bottom: 2px solid var(--gray-3);
+    border-bottom: 0.1vw solid var(--gray-3);
     padding-bottom: 1vw;
     margin-bottom: 1vw;
 }
@@ -469,6 +519,22 @@ a {
     margin-bottom: 2vw;
 }
 
+.icon__vk {
+    width: 4vw;
+}
+
+.icon__tg {
+    width: 3.5vw;
+}
+
+.icon__inst {
+    width: 3.3vw;
+}
+
+.icon__tt {
+    width: 3vw;
+}
+
 .footer__text {
     display: grid;
     row-gap: 1vw;
@@ -476,7 +542,7 @@ a {
 }
 
 .footer__text__main {
-    font-size: 20px;
+    font-size: 2.5vw;
     font-weight: 500;
 }
 
@@ -487,7 +553,7 @@ a {
 
 .footer__text__bottom {
     font-weight: 700;
-    font-size: 20px;
+    font-size: 2vw;
 }
 
 .footer__service {
@@ -497,12 +563,12 @@ a {
 
 .footer__service div {
     color: var(--gray-3);
-    font-size: 15px;
+    font-size: 1.3vw;
     font-weight: 500;
 }
 
 .footer__service a {
-    font-size: 15px;
+    font-size: 1.3vw;
     color: var(--gray-3);
     font-weight: 500;
     transition: none;
