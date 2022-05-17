@@ -378,7 +378,7 @@ a {
 
 .content {
     background-color: var(--gray-1);
-    padding: 0 5vw 20vw 5vw;
+    padding: 0 5vw 100vh 5vw;
     /* height: 40vw; */
 }
 
@@ -436,8 +436,12 @@ a {
 } */
 
 .new__video__block:hover .video__block {
-    padding: .3vw;
-    transition: padding .3s ease;
+    /* padding: .3vw; */
+    width: 18.5vw;
+    height: 10.5vw;
+    margin: -.25vw 0 0 -.5vw;
+    /* transition: padding .3s ease; */
+    transition: width .3s ease, height .3s ease, margin .3s ease;
 }
 
 /* .play__video__icon {
