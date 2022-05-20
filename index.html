@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
     <title>EYE</title>
     <link rel="stylesheet" href="style/style.css">
-    <!-- <link rel="stylesheet" href="style/media.css"> -->
+    <link rel="stylesheet" href="style/media.css">
 </head>
 
 <body>
@@ -29,8 +29,25 @@
                     <li><a href="">Сериалы</a></li>
                     <li><a href="">Мультфильмы</a></li>
                 </ul>
-                <img class="icon icon__search" src="img/img-icons/search.svg" alt="">
+                <form class="search__container" action="" method="get">
+                    <input class="search__input" name="search" type="text" placeholder="Искать здесь...">
+                    <img class="icon icon__cross" src="img/img-icons/cross.svg" alt="">
+                    <img class="icon icon__search" src="img/img-icons/search.svg" alt="">
+                </form>
             </div>
+            <div class="menu__burger__nav">
+                <ul>
+                    <li><a href="index.html">Мое кино</a></li>
+                    <li><a href="film-new.html">Новинки</a></li>
+                    <li><a href="">Фильмы</a></li>
+                    <li><a href="">Сериалы</a></li>
+                    <li><a href="">Мультфильмы</a></li>
+                </ul>
+            </div>
+            <img class="icon icon__search__media" src="img/img-icons/search.svg" alt="">
+            <a href="#" class="menu__burger">
+                    <span></span>
+            </a>
             <div class="icon__profile">
                 <img class="icon icon__profile__adapt" src="img/img-icons/profile.svg" alt="">
             </div>  
@@ -70,7 +87,7 @@
             <div class="hello__window">
                 <div class="hello__form">
                     <a class="hello__logining" href="logining-form.html">Войти</a> 
-                    <a class="hello__registration" href="registration-form.html">Зарегестрироваться</a>
+                    <a class="hello__registration" href="registration-form.html">Зарегистрироваться</a>
                 </div>
             </div>
         </div>
@@ -149,8 +166,6 @@
         </div>
     </div>
 
-    <div class="space"></div>
-
     <div class="footer">
         <div class="footer__icons__text">
             <div class="footer__icons">
@@ -161,7 +176,7 @@
             </div>
             <div class="footer__text">
                 <div class="footer__text__main">Мы всегда готовы вам помочь</div>
-                <a href=""><div class="footer__text__bottom">Задать вопрос</div></a>
+                <a href="https://vk.com/nevici"><div class="footer__text__bottom">Задать вопрос</div></a>
             </div>
         </div>
 
@@ -173,6 +188,9 @@
             <a href="">Справка</a>
         </div>
     </div>
+
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/script.js"></script>
 
 </body>
 

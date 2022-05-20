@@ -10,10 +10,6 @@
     --green: #00BF13;
 }
 
-.hello__window {
-    display: none;
-}
-
 .header {
     display: flex;
     flex-flow: column nowrap;
@@ -23,14 +19,16 @@
 }
 
 .header__nav {
-    position: relative;
+    position: fixed;
+    background-color: rgba(26, 26, 26, 0.8);
 }
 
 .registration__text {
-    margin-top: 2vw;
+    margin-top: 10vw;
     color: white;
-    font-size: 36px;
-    border-bottom: 10px solid var(--orange-light) ;
+    font-size: 2.5vw;
+    border-bottom: 5px solid var(--orange-light);
+    border-radius: 10px;
 }
 
 .registration__form {
@@ -52,7 +50,7 @@
 .registration__form div div {
     text-align: start;
     color: white;
-    font-size: 1rem;
+    font-size: 1.3vw;
 }
 
 ::placeholder {
@@ -67,6 +65,8 @@
     border: none;
     outline: none;
     box-shadow: none;
+    font-size: 1.1vw;
+    font-weight: 600;
 }
 
 button {
@@ -84,22 +84,4 @@ button {
 button:hover {
     background-color: var(--orange-dark);
     cursor: pointer;
-}
-
-.hello__window {
-    display: none;
-    top: 0;
-    padding-bottom: 2vw;
-    z-index: 1;
-    position: fixed;
-    background-color: var(--gray-2);
-    right: 0;
-    width: 300px;
-    margin-right: 3%;
-    border-radius: 0 0 20px 20px;
-}
-
-.icon__profile:hover ~ .hello__window, 
-.hello__window:hover {
-    display: block;
 }

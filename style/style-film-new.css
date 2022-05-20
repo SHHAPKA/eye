@@ -18,11 +18,13 @@
 }
 
 .header__nav {
-    position: relative;
+    position: fixed;
+    background-color: rgba(26, 26, 26, 0.8);
 }
 
 .content {
-    margin-bottom: 3vw;
+    padding-top: 10vw;
+    padding-bottom: 50%;
 }
 
 .content__new {
@@ -33,7 +35,7 @@
 .content__new__video {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    row-gap: 2vw;
+    row-gap: 11vw;
     column-gap: 0.8vw;
 }
 

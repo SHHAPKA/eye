@@ -10,90 +10,52 @@
 
 /* Adaptiv */
 
-@media screen and (min-width:1500px) {
-/* Base */
-    /* .logo img {width: 60px;} */
-    .logo img {width: 4vw;}
-    /* .logo a {font-size: 50px;} */
-    .logo a {font-size: 4vw;}
-    /* .nav ul li a {font-size: 28px;} */
-    .nav ul li a {font-size: 1.8vw;}
-    .icon__search {width: 35px;}
-    .icon__profile__adapt {width: 40px;}
-    .icon__play {width: 23px;}
-    .icon__info {width: 40px;}
-    .icon__bookmark {width: 24px;}
-    .new__text {font-size: 50px;}
-    /* .elt__numb {font-size: 17px;} */
-    .elt__numb {font-size: 1vw;}
-    .icon__vk {width: 45px;}
-    .icon__tg {width: 40px;}
-    .icon__inst {width: 40px;}
-    .icon__tt {width: 35px;}
-    .footer__text__main {font-size: 24px;}
-    .footer__text__bottom {font-size: 24px;}
-    .footer__service div {font-size: 18px;}
-    .footer__service a {font-size: 18px;}
-    .hello__form .hello__logining {font-size: 22px;}
-    .hello__form .hello__registration {font-size: 16px;}
-    .hello__form {padding: 15% 15% 10% 15%;}
-    .hello__window {padding-bottom: 2vw; width: 25vw; margin-right: 3%;}
-    .header__film__button  a {font-size: 22px;}
-/* Registration page */
-    .registration__text {font-size: 50px;}
-    .registration__form div div {font-size: 18px;}
-    .registration__form button {font-size: 22px;}
-    .registration__form div input {font-size: 18px;}
-}
+/* Computer */
 
-@media screen and (max-width:1200px) {
+@media screen and (max-width:1440px) {
     
-    /* .logo img {width: 30px;} */
-    .logo img {width: 3vw;}
-    /* .logo a {font-size: 30px;} */
-    .logo a {font-size: 2.5vw;}
-    /* .nav ul li a {font-size: 18px;} */
-    .nav ul li a {font-size: 1.8vw;}
-    .icon__search {width: 25px;}
-    .icon__profile__adapt {width: 30px;}
-    .elt__numb {font-size: 1vw;}
-    .icon__vk {width: 35px;}
-    .icon__tg {width: 30px;}
-    .icon__inst {width: 30px;}
-    .icon__tt {width: 25px;}
-    .footer__text__main {font-size: 18px;}
-    .footer__text__bottom {font-size: 18px;}
-    .footer__service div {font-size: 13px;}
-    .footer__service a {font-size: 13px;}
-    .hello__form .hello__logining {font-size: 16px;}
-    .hello__form .hello__registration {font-size: 10px;}
-    .hello__form {padding: 10% 15% 10% 15%;}
-    .hello__window {padding-bottom: 1.5vw; width: 22vw; margin-right: 3%;}
+}
+
+/* Laptop */
+
+@media screen and (max-width:1024px) {
 
 }
 
-@media screen and (max-width:992px) {
-    .nav ul li a {font-size: 1.4vw;}
-    .icon__search {width: 2vw;}
-    .icon__profile__adapt {width: 2.5vw;}
-    .header__nav {padding: 1vw 5vw 1vw 5vw;}
+/* Pad */
+
+@media screen and (max-width:800px) {
+
+    .nav {display: none;}
+    .menu__burger {display: flex;}
+    .logo img {width: 5vw;}
+    .logo a {font-size: 5vw;}
+    .icon__profile__adapt {width: 5vw;}
+    .header__film {height: 60vw;}
+    .header {height: 60vw;}
+    .icon__play {width: 2vw;}
+    .header__film__button a {font-size: 2vw;}
+    .icon__info {width: 3vw;}
+    .icon__bookmark {width: 1.5vw;}
+    .new__text {font-size: 4vw;}
+    .header__film__button__bookmark {padding: 1vw 1.75vw;}
+    .icon__search__media {width: 4.5vw; display: block; position: absolute; left: 80%; z-index: -1;}
 }
 
-@media screen and (max-width:768px) {
-    .nav ul {margin-bottom: .5vw;}
-    .content__new__video {grid-template-columns: 1fr 1fr 1fr;}
-    .video__block {width: 28vw; height: 16vw;}
+/* Pad */
+
+@media screen and (max-width:640px) {
+
 }
+
+/* Phone */
 
 @media screen and (max-width:480px) {
-    /* .new__video__block > a > div > img {border-radius: 5px;} */
-    .nav ul {margin-bottom: 1vw;}
-    .content__new__video {grid-template-columns: 1fr 1fr; row-gap: 26vw;}
-    .video__block {width: 42vw; height: 23vw;}
     
 }
 
+/* Phone */
+
 @media screen and (max-width:320px) {
-    .content__new__video {grid-template-columns: 1fr; row-gap: 50vw;}
-    .video__block {width: 85vw; height: 45vw;}
+
 }
