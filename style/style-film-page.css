@@ -23,16 +23,15 @@
 }
 
 .content {
-    padding-top: 10vw;
-    padding-bottom: 50%;
+    padding-top: 4vw;
 }
 
-.content__new {
+.content__block {
     display: grid;
     padding-top: 3vw;
 }
 
-.content__new__video {
+.content__video {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     row-gap: 11vw;

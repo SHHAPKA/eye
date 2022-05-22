@@ -9,6 +9,7 @@
     <title>EYE</title>
     <link rel="stylesheet" href="style/style.css">
     <link rel="stylesheet" href="style/media.css">
+    <link rel="stylesheet" href="style/style-film-page.css">
 </head>
 
 <body>
@@ -21,12 +22,17 @@
                 <img class="icon icon__logo" src="img/img-logo/logo.svg" alt="">
                 <a href="index.html">EYE</a>
             </div>
+            
             <div class="nav">
+                <a href="#" class="menu__burger">
+                    <span></span>
+                </a>
+                <div class="menu__burger__nav"></div>
                 <ul>
-                    <li><a class="nav__page" href="index.html">Мое кино</a></li>
+                    <li><a href="index.html">Мое кино</a></li>
                     <li><a href="film-new.html">Новинки</a></li>
                     <li><a href="film-film.html">Фильмы</a></li>
-                    <li><a href="film-mult.html">Мультфильмы</a></li>
+                    <li><a class="nav__page" href="film-mult.html">Мультфильмы</a></li>
                 </ul>
                 <form class="search__container" action="" method="get">
                     <input class="search__input" name="search" type="text" placeholder="Искать здесь...">
@@ -42,7 +48,6 @@
                     <li><a href="film-mult.html">Мультфильмы</a></li>
                 </ul>
             </div>
-            <img class="icon icon__search__media" src="img/img-icons/search.svg" alt="">
             <a href="#" class="menu__burger">
                     <span></span>
             </a>
@@ -85,52 +90,20 @@
             <div class="hello__window">
                 <div class="hello__form">
                     <a class="hello__logining" href="logining-form.html">Войти</a> 
-                    <a class="hello__registration" href="registration-form.html">Зарегистрироваться</a>
+                    <a class="hello__registration" href="registration-form.html">Зарегестрироваться</a>
                 </div>
             </div>
         </div>
-
-<!-- Header film -->
-
-        <div class="header__film">
-            <img src="img/img-film-header/Strelcov.jpg" alt="">
-            <div class="header__film__button">
-                <a class="header__film__button__see" href=""><img class="icon icon__play" src="img/img-icons/play.svg" alt="">Смотреть сериал</a>
-                <a class="header__film__button__about" href=""><img class="icon icon__info" src="img/img-icons/info.svg" alt="">О сериале</a>
-                <a class="header__film__button__bookmark" href=""><img class="icon icon__bookmark" src="img/img-icons/bookmark.svg" alt=""></a>
-            </div>
-        </div>
-    </div>
 
 <!-- Content -->
 
     <div class="content">
 
         <div class="content__block">
-            <a class="content__nav__text" href="film-new.html"><div class="content__text">Новинки</div><img src="img/img-icons/arrow-right.svg" alt=""></a> 
+            <a class="content__nav__text" href="#"><div class="content__text">Мультфильмы</div><img src="img/img-icons/arrow-right.svg" alt=""></a> 
             <div class="content__video">
                 <div class="content__video__block">      
-                    <a href="">
-                        <div class="video__block">
-                            <div class="elt elt__bad">
-                                <div class="elt__numb">4.2</div>
-                            </div>
-                            <img src="img/img-film-preview/Dorogoi-hevan-hansen.jpg" alt="">
-                        </div>
-                    </a>
-                </div>
-                <div class="content__video__block">
-                    <a href="">
-                        <div class="video__block">
-                            <div class="elt elt__normal">
-                                <div class="elt__numb">5.3</div>
-                            </div>
-                            <img src="img/img-film-preview/Kamon-kamon.jpg" alt="">
-                        </div>
-                    </a>
-                </div>
-                <div class="content__video__block">
-                    <a href="">
+                    <a href=""> 
                         <div class="video__block">
                             <div class="elt elt__good">
                                 <div class="elt__numb">7.9</div>
@@ -152,6 +125,36 @@
                 <div class="content__video__block">
                     <a href="">
                         <div class="video__block">
+                            <div class="elt elt__normal">
+                                <div class="elt__numb">4.9</div>
+                            </div>
+                            <img src="img/img-film-preview/Pervi-sneg.jpg" alt="">
+                        </div>
+                    </a>
+                </div>
+                <div class="content__video__block">
+                    <a href="">
+                        <div class="video__block">
+                            <div class="elt elt__good">
+                                <div class="elt__numb">5.9</div>
+                            </div>
+                            <img src="img/img-film-preview/V-kletke.jpg" alt="">
+                        </div>
+                    </a>
+                </div>
+                <div class="content__video__block">      
+                    <a href="">
+                        <div class="video__block">
+                            <div class="elt elt__normal">
+                                <div class="elt__numb">5.3</div>
+                            </div>
+                            <img src="img/img-film-preview/Kamon-kamon.jpg" alt="">
+                        </div>
+                    </a>
+                </div>
+                <div class="content__video__block">      
+                    <a href="">
+                        <div class="video__block">
                             <div class="elt elt__bad">
                                 <div class="elt__numb">3.1</div>
                             </div>
@@ -159,128 +162,29 @@
                         </div>
                     </a>
                 </div>
-            </div>
-            <div class="arrow__right"><img src="" alt=""></div>
-        </div>
-
-
-
-        <div class="content__block" id="content__block__movie">
-            <a class="content__nav__text" href="film-new.html"><div class="content__text">Фильмы</div><img src="img/img-icons/arrow-right.svg" alt=""></a> 
-            <div class="content__video">
-                <div class="content__video__block">      
-                    <a href="film.html">
-                        <div class="video__block">
-                            <div class="elt elt__good">
-                                <div class="elt__numb">6.0</div>
-                            </div>
-                            <img src="img/img-film-preview/Marsianin.jpg" alt="">
-                        </div>
-                    </a>
-                </div>
-                <div class="content__video__block">
-                    <a href="">
-                        <div class="video__block">
-                            <div class="elt elt__bad">
-                                <div class="elt__numb">4.5</div>
-                            </div>
-                            <img src="img/img-film-preview/Osnovatel.jpg" alt="">
-                        </div>
-                    </a>
-                </div>
-                <div class="content__video__block">
-                    <a href="">
-                        <div class="video__block">
-                            <div class="elt elt__good">
-                                <div class="elt__numb">7.5</div>
-                            </div>
-                            <img src="img/img-film-preview/Chelovek-shvecirski-noj.jpg" alt="">
-                        </div>
-                    </a>
-                </div>
-                <div class="content__video__block">
-                    <a href="">
-                        <div class="video__block">
-                            <div class="elt elt__bad">
-                                <div class="elt__numb">3.2</div>
-                            </div>
-                            <img src="img/img-film-preview/Chelovek-muravei.jpg" alt="">
-                        </div>
-                    </a>
-                </div>
-                <div class="content__video__block">
-                    <a href="">
-                        <div class="video__block">
-                            <div class="elt elt__normal">
-                                <div class="elt__numb">5.4</div>
-                            </div>
-                            <img src="img/img-film-preview/Logan.jpg" alt="">
-                        </div>
-                    </a>
-                </div>
-            </div>
-            <div class="arrow__right"><img src="" alt=""></div>
-        </div>
-
-
-
-        <div class="content__block" id="content__block__movie">
-            <a class="content__nav__text" href="film-new.html"><div class="content__text">Мультфильмы</div><img src="img/img-icons/arrow-right.svg" alt=""></a> 
-            <div class="content__video">
                 <div class="content__video__block">      
                     <a href="">
                         <div class="video__block">
                             <div class="elt elt__bad">
                                 <div class="elt__numb">4.2</div>
                             </div>
-                            <img src="img/img-film-preview/Phinik.jpg" alt="">
+                            <img src="img/img-film-preview/Dorogoi-hevan-hansen.jpg" alt="">
                         </div>
                     </a>
                 </div>
-                <div class="content__video__block">
+                <div class="content__video__block">      
                     <a href="">
                         <div class="video__block">
                             <div class="elt elt__normal">
-                                <div class="elt__numb">5.3</div>
+                                <div class="elt__numb">5.2</div>
                             </div>
-                            <img src="img/img-film-preview/Kungfu-panda.jpg" alt="">
-                        </div>
-                    </a>
-                </div>
-                <div class="content__video__block">
-                    <a href="">
-                        <div class="video__block">
-                            <div class="elt elt__good">
-                                <div class="elt__numb">7.9</div>
-                            </div>
-                            <img src="img/img-film-preview/Emoji-film.jpg" alt="">
-                        </div>
-                    </a>
-                </div>
-                <div class="content__video__block">
-                    <a href="">
-                        <div class="video__block">
-                            <div class="elt elt__good">
-                                <div class="elt__numb">8.2</div>
-                            </div>
-                            <img src="img/img-film-preview/Ronal-varvar.jpg" alt="">
-                        </div>
-                    </a>
-                </div>
-                <div class="content__video__block">
-                    <a href="">
-                        <div class="video__block">
-                            <div class="elt elt__bad">
-                                <div class="elt__numb">3.1</div>
-                            </div>
-                            <img src="img/img-film-preview/Tri-bogatirz-kon-na-trone.jpg" alt="">
+                            <img src="img/img-film-preview/Sojjeni-zajivo.jpg" alt="">
                         </div>
                     </a>
                 </div>
             </div>
             <div class="arrow__right"><img src="" alt=""></div>
         </div>
-
     </div>
 
     <div class="footer">

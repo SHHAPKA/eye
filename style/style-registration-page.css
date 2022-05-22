@@ -24,9 +24,9 @@
 }
 
 .registration__text {
-    margin-top: 10vw;
+    margin-top: 8vw;
     color: white;
-    font-size: 2.5vw;
+    font-size: 2vw;
     border-bottom: 5px solid var(--orange-light);
     border-radius: 10px;
 }
@@ -35,10 +35,10 @@
     display: flex;
     flex-flow: column nowrap;
     width: 25vw;
-    padding: 3vw 4vw 3vw 4vw;
+    padding: 2.5vw 3vw 2.5vw 3vw;
     border-radius: 10px;
     background-color: var(--gray-2);
-    margin-top: 2vw;
+    margin-top: 1vw;
     text-align: center;
 }
 
